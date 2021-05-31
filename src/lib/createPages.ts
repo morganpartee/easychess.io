@@ -32,17 +32,6 @@ export const createPages: GatsbyCreatePages = async ({
           }
         }
       }
-      allSkilltreesYaml {
-        edges {
-          node {
-            title
-            description
-            fields {
-              slug
-            }
-          }
-        }
-      }
     }
   `)
 
@@ -64,20 +53,6 @@ export const createPages: GatsbyCreatePages = async ({
       context: {
         next,
         previous,
-        slug: post.node.fields.slug
-      }
-    })
-  })
-
-  // Create skill tree pages.
-  const skillTrees = data.data.allSkilltreesYaml.edges
-
-  skillTrees.forEach((post: Post) => {
-    createPage({
-      path: post.node.fields.slug,
-      // tslint:disable-next-line:object-literal-sort-keys
-      component: path.resolve(`./src/templates/skilltree/skill-tree.tsx`),
-      context: {
         slug: post.node.fields.slug
       }
     })
