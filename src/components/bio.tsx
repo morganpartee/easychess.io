@@ -13,12 +13,9 @@ export const Bio = () => {
   return (
     <Content>
       <p>
-        SensibleDefaults is mostly written by <strong>{author}</strong>, with
+        EasyChess is mostly written by <strong>{author}</strong>, with
         frequent help from our friends.
         <br />
-        <a href={`https://twitter.com/${social!.twitter}`}>
-          You can follow the blog on Twitter.
-        </a>
       </p>
     </Content>
   )
