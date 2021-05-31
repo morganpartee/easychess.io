@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `SensibleDefaults`,
+    title: `EasyChess`,
     menuLinks: [
       {
         name: `Home`,
@@ -19,11 +19,11 @@ module.exports = {
       //   link: `/skilltrees`
       // }
     ],
-    author: `John Partee and Anthony Butt`,
-    description: `Sensible defaults are good places to start when solving a problem. Here's a place where we share some of ours.`,
-    siteUrl: `https://sensibleDefaults.io/`,
+    author: `David Josephs and John Partee`,
+    description: `Documenting John's rise from noobieness, at David's hand.`,
+    siteUrl: `https://easychess.io/`,
     social: {
-      twitter: `sensibleDef`
+      twitter: `EasyChess`
     }
   },
   plugins: [
@@ -83,15 +83,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-191825094-1`
+        trackingId: `G-BYYKS4QLMJ`
       }
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `SensibleDefaults.io`,
-        short_name: `SensibleDefaults`,
+        name: `easychess.io`,
+        short_name: `EasyChess`,
         start_url: `/`,
         background_color: `#eee`,
         theme_color: `#663399`,
