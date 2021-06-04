@@ -41,7 +41,17 @@ export const Layout = (props: Props) => {
 
   return (
     <Content>
-      <header>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BYYKS4QLMJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BYYKS4QLMJ');
+</script>
+  <header>
         <HeaderTitle>
           <StyledLink to={`/`} style={{ color: "unset" }}>
             {title}
